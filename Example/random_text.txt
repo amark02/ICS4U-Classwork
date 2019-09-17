@@ -1,0 +1,5 @@
+cup
+hello
+mug
+mouse
+late
