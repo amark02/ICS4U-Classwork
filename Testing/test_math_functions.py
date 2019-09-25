@@ -1,4 +1,5 @@
 import math_functions #(don't need '.py' at the end)
+# from math_functions import add, subtract (allows you to import certain functions)
 
 # math_functions.add() (allows you to use the function from the other file)
 
