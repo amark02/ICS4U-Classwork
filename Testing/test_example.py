@@ -1,5 +1,5 @@
 """
-def test_teting():
+def test_testing():
     assert True == True
 
     just makes sure pytest is working on this file
