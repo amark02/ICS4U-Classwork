@@ -38,6 +38,6 @@ def test_get_board_length():
     assert result == expected
 
     intial_dict = {}
-    expected = None
+    expected = 0
     result = evaluation.get_board_length(intial_dict, 5)
     assert result == expected

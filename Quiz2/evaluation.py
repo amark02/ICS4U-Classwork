@@ -79,6 +79,17 @@ def get_board_length(board_length: Dict, wood_length: int) -> int:
     Returns:
         How many pieces of wood there are for a specific board length
     """
+#correct answer
+    for key in board_length.keys():
+        if key == wood_length:
+            return board_length[key]
+    
+    else: 
+        return 0
+
+    """
+    wrong answer:
+
     list_of_wood = []
     for key in board_length.keys():
         list_of_wood.append(key)
@@ -90,15 +101,6 @@ def get_board_length(board_length: Dict, wood_length: int) -> int:
         else:
             None
     return total
-
-""" correct answer
-    for key in board_length.keys():
-        if key == str(wood_length)
-            return board_length[key]
-    
-    else: 
-        return 0
-"""
-
+    """
     
 
