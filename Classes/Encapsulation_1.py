@@ -24,7 +24,7 @@ class Person:
 
 VOTING_AGE = 18
 
-p = Person(name = "Jeff", age = 35)
+p = Person(name = "Jeff Foxworthy", age = 35)
 
 if p.get_age() >= VOTING_AGE:
     print(f"{p.get_name()} can vote")
