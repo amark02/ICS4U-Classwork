@@ -2,7 +2,7 @@ import datetime
 
 import pytest
 
-from practice_evaluation import Person, Classroom, Student, Teacher
+from practice_evaluation import Classroom, Person, Student, Teacher
 
 
 
@@ -151,7 +151,7 @@ def test_student_greet():
     student = Student("John", "Smith", datetime.datetime(2020, 1, 1), 1234)
     assert student.greet() == "Hello, my name is John Smith and I'm a student."
 
-"""
+
 def test_teacher_init():
     teacher = Teacher("John", "Smith", datetime.datetime(2020, 1, 1), 1234)
     assert isinstance(teacher, Person)
@@ -230,4 +230,3 @@ def test_cant_assign_work_to_someone_elses_class():
     someone_elses_class = Classroom("Computer Studies")
     with pytest.raises(Exception):
         teacher.assign_work(someone_elses_class)
-"""
