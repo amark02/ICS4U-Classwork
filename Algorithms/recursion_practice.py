@@ -34,7 +34,9 @@ print(fibonacci(1))
 print(fibonacci(2))
 
 # strCount
-def strCount(string: str, ksub: str) -> int:
+def str_count(string: str, ksub: str) -> int:
     if string == "":
         return 0
-    if 
+    if string.startswith(sub):    # other way string[:len(sub)]
+        return 1 + str_count(string[len(sub):], sub)
+    return 0 + str_count(string[1:], sub)
