@@ -1,3 +1,5 @@
+from typing import List, Dict
+
 """
 # Factorial
 def factorial(n: int) -> int:
@@ -40,3 +42,15 @@ def str_count(string: str, ksub: str) -> int:
     if string.startswith(sub):    # other way string[:len(sub)]
         return 1 + str_count(string[len(sub):], sub)
     return 0 + str_count(string[1:], sub)
+
+# arrary2020
+def arrary_2020(numbres: List[int]) -> bool:
+    if i > len(numbers) - 2:
+        return False
+    
+    if numbers[i] * 10 == numbers[i+1]:
+        return True
+    
+    return False or array_2020(numbers, i+1)
+
+# strDist
