@@ -23,7 +23,7 @@ print(bunnyEars(0))
 print(bunnyEars(1))
 print(bunnyEars(2))
 """
-
+"""
 # Fibonacci
 def fibonacci(n: int) -> int:
     if n == 0:
@@ -34,7 +34,8 @@ def fibonacci(n: int) -> int:
 print(fibonacci(0))
 print(fibonacci(1))
 print(fibonacci(2))
-
+"""
+"""
 # strCount
 def str_count(string: str, ksub: str) -> int:
     if string == "":
@@ -42,7 +43,8 @@ def str_count(string: str, ksub: str) -> int:
     if string.startswith(sub):    # other way string[:len(sub)]
         return 1 + str_count(string[len(sub):], sub)
     return 0 + str_count(string[1:], sub)
-
+"""
+"""
 # arrary2020
 def arrary_2020(numbres: List[int]) -> bool:
     if i > len(numbers) - 2:
@@ -52,5 +54,47 @@ def arrary_2020(numbres: List[int]) -> bool:
         return True
     
     return False or array_2020(numbers, i+1)
-
+"""
+"""
 # strDist
+def str_dist(string: str, sub: str) -> int:
+    if string == "":
+        return 0
+"""
+"""
+# triangle
+def triangle(row: int) -> int:
+    if row == 0:
+        return 0
+    return row + triangle(row-1)
+print(triangle(0))
+print(triangle(1))
+print(triangle(2))
+"""
+"""
+# bunnyEars2
+def bunnyEars2(n: int) -> int:
+    ears = 0
+    if n == 0:
+        return 0
+    if n == 1:
+        return 2
+    if n % 2 == 0:
+        ears = 3
+    else: 
+        ears = 2
+    return ears + bunnyEars2(n-1)  
+print(bunnyEars2(0)) 
+print(bunnyEars2(1)) 
+print(bunnyEars2(2))
+"""
+"""
+# sumDigits
+def sumDigits(n: int) -> int:
+    if n < 10:
+        return n
+    return n % 10 + sumDigits(n//10)
+print(sumDigits(126))
+print(sumDigits(49))
+print(sumDigits(12))
+"""
