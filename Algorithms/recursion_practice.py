@@ -46,7 +46,7 @@ def str_count(string: str, ksub: str) -> int:
 """
 """
 # arrary2020
-def arrary_2020(numbres: List[int]) -> bool:
+def arrary_2020(numbers: List[int]) -> bool:
     if i > len(numbers) - 2:
         return False
     
@@ -98,3 +98,37 @@ print(sumDigits(126))
 print(sumDigits(49))
 print(sumDigits(12))
 """
+"""
+# count7
+def count7(n: int) -> int:
+    if n < 10:
+        if n == 7:
+            return 1
+        else:
+            return 0
+    if n % 10 == 7:
+        return 1 + count7(n//10)
+    else:
+        return count7(n//10)  
+print(count7(717))
+print(count7(7))
+print(count7(123))
+"""
+
+# count8
+def count8(n: int) -> int:
+    if n < 10:
+        if n == 8:
+            return 1
+        else:
+            return 0
+    if n % 10 == 8:
+        if n % 100:
+            return 2 + count8(n//10)
+        else:
+            return 1 + count8(n//10)
+    else: 
+        return count8(n//10)
+print(count8(8))
+print(count8(818))
+print(count8(8818))
